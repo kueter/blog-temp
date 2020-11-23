@@ -13,11 +13,11 @@ a.nav-link::before {
 }
 
 a.nav-link:hover:not(.current)::before {
-  width: 20px;
+  width: 12px;
   transition: width .5s ease-in-out;
 }
 
 a.current::before{
-  width: 40px;
+  width: 24px;
 }
 
