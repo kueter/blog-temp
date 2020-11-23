@@ -12,11 +12,12 @@ a.nav-link::before {
   background-color: #3171b7;
 }
 
-a.nav-link:hover:not(:active)::before {
+a.nav-link:hover:not(.current)::before {
   width: 20px;
   transition: width .5s ease-in-out;
 }
 
-a.nav-link:active::before{
+a.current::before{
   width: 40px;
 }
+
