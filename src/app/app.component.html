@@ -10,29 +10,29 @@
       <a class="nav-link" (click)="scrollTo('services')" [ngClass]="{ 'current': currentSection === 'services' }"><small>{{'Services'}}</small> </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" (click)="scrollTo('testimony')" [ngClass]="{ 'current': currentSection === 'testimony' }"><small>{{'Client Testimony'}}</small> </a>
+      <a class="nav-link" (click)="scrollTo('testimony')" [ngClass]="{ 'current': currentSection === 'testimony' }"><small>{{'Testimony'}}</small> </a>
     </li>
   </ul>
 </nav>
 
 
 <div id="parentDiv" scrollpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)" style="height:620px;overflow-y: scroll;">
-  <div id="me" class="container-fluid" style="padding-top:70px;width: 100%; height: 96%;">
+  <div id="me" class="container-fluid" style="padding-top:70px;width: 100%; height: 100%;">
     <h1>Me</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="works" class="container-fluid" style="padding-top:70px;height: 96%;">
+  <div id="works" class="container-fluid" style="padding-top:70px;width: 100%;height: 100%;">
     <h1>Works</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="services" class="container-fluid" style="padding-top:70px;height: 96%;">
+  <div id="services" class="container-fluid" style="padding-top:70px;width: 100%;height: 100%;">
     <h1>Services</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   </div>
-  <div id="testimony" class="container-fluid" style="padding-top:70px;height: 96%;">
+  <div id="testimony" class="container-fluid" style="padding-top:70px;width: 100%;height: 100%;">
     <h1>Testimony</h1>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
