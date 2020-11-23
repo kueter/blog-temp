@@ -16,7 +16,6 @@ export class AppComponent {
   }
 
   scrollTo(section: string) {
-    document.querySelector('#' + section)
-    .scrollIntoView();
+    document.querySelector('#' + section).scrollIntoView();
   }
 }
