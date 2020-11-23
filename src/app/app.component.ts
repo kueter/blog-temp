@@ -49,6 +49,7 @@ export class AppComponent {
 
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
+
   }
 
   scrollTo(section: string) {
