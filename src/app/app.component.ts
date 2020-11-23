@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'blog';
 
-
-  currentSection = 'section1';
+  currentSection = 'me';
 
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
