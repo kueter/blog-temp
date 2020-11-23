@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+
+
+  currentSection = 'section1';
+
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+  }
+
+  scrollTo(section: string) {
+    document.querySelector('#' + section)
+    .scrollIntoView();
+  }
 }
