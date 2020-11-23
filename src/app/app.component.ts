@@ -1,4 +1,4 @@
-import { query, style, animate, group  } from '@angular/animations';
+import { query, style, animate, group, transition, trigger  } from '@angular/animations';
 import { Component } from '@angular/core';
 
 
@@ -29,7 +29,18 @@ const right = [
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    trigger('scrollview', [
+      transition('* => me', left),
+      transition('me => *', right),
+      transition('* => testimony', right),
+      transition('testimony => *', left),
+
+      transition('works => services', left),
+      transition('services => work', right),
+    ])
+  ],
 })
 export class AppComponent {
   title = 'blog';
