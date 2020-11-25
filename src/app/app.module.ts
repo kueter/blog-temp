@@ -6,11 +6,20 @@ import { AppComponent } from './app.component';
 import { ScrollpyDirective } from './scrollpy.directive';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { WorksComponent } from './works/works.component';
+import { TestimonyComponent } from './testimony/testimony.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScrollpyDirective
+    ScrollpyDirective,
+    HomeComponent,
+    PricingComponent,
+    WorksComponent,
+    TestimonyComponent
   ],
   imports: [
     BrowserModule,

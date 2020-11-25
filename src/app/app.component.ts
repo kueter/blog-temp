@@ -1,5 +1,6 @@
 import { query, style, animate, group, transition, trigger  } from '@angular/animations';
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 
 const left = [
@@ -31,28 +32,21 @@ const right = [
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    trigger('scrollview', [
-      transition('* => me', left),
-      transition('me => *', right),
+    trigger('outletAnimation', [
+      transition('* => home', left),
+      transition('home => *', right),
       transition('* => testimony', right),
       transition('testimony => *', left),
 
       transition('works => services', left),
-      transition('services => work', right),
+      transition('services => works', right),
     ])
   ],
 })
 export class AppComponent {
   title = 'blog';
 
-  currentSection = 'me';
-
-  onSectionChange(sectionId: string) {
-    this.currentSection = sectionId;
-
-  }
-
-  scrollTo(section: string) {
-    document.querySelector('#' + section).scrollIntoView();
+  preparedRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 }
