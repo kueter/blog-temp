@@ -1,5 +1,5 @@
 .nav-link {
-  color: #3171b7;
+  color: #008080;
   cursor: pointer;
 }
 
@@ -9,7 +9,7 @@ a.nav-link::before {
   bottom: 25%;
   width: 0px;
   height: 3px;
-  background-color: #3171b7;
+  background-color: #008080;
 }
 
 a.nav-link:hover:not(.current)::before {
