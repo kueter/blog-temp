@@ -5,13 +5,8 @@
   border: none;
 }
 
-.p {
+.ps {
+  position: absolute;
   width: 100%;
   height: 500px;
-}
-
-.ps > img {
-  position: absolute;
-  top: 10%;
-
 }
