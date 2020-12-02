@@ -1,6 +1,7 @@
 .nav-link {
   color: #008080;
   cursor: pointer;
+  font-family: 'Caveat Brush', cursive;
 }
 
 a.nav-link::before {

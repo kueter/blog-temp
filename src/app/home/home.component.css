@@ -27,3 +27,14 @@
     transform: rotateZ(360deg);
   }
 }
+
+
+.presentation {
+  text-align: justify;
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+.presentation span {
+  font-size: 30px;
+  font-weight: bold;
+}
