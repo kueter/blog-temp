@@ -1,5 +1,17 @@
 .bs {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .125);
   height: 500px;
+  width: 90%;
   border: none;
+}
+
+.p {
+  width: 100%;
+  height: 500px;
+}
+
+.ps > img {
+  position: absolute;
+  top: 10%;
+
 }
