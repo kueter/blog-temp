@@ -1,5 +1,6 @@
-.home {
+.home-clip {
   width: 30%;
-  height: 200px;
+  height: 600px;
+  background-color: #008080;
   clip-path: polygon(0 0, 59% 41%, 100% 100%, 0% 100%);
 }
