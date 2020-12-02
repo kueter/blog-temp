@@ -39,4 +39,15 @@ a.item-active .fa-bars-progress, a.item-active .fa-gear, a.item-active span {
 
 .card-header {
   border: none;
+  background-color: #FFFF;
+}
+
+.pav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.pav input {
+  width: 80%;
 }
