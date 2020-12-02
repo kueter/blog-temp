@@ -18,13 +18,23 @@
 .item a {
   display: block;
   padding: .67rem .80rem;
+  border-radius: .35rem;
 }
 
-.item .fa-bars-progress {
+.item .fa-bars-progress, .fa-gear {
   color: rgb(124, 128, 128);
 }
 
+a.item-active {
+  background-color: #008080;
+}
 
-a.item-active .fa-bars-progress {
-  color: #008080;
+
+
+a.item-active .fa-bars-progress, .fa-gear, span {
+  color: #FFFF!important;
+}
+
+.mgt {
+  margin-top: 32px;
 }
