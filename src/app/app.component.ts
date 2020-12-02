@@ -47,6 +47,10 @@ export class AppComponent implements OnInit{
 
   title = 'blog';
 
+  constructor() {
+
+  }
+
   ngOnInit(): void {
 
   }
