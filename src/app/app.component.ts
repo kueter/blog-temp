@@ -43,16 +43,16 @@ const right = [
     ]),
     trigger('clip', [
       state('home', style({
-        width: '70%', height: '642px', 'background-color':'#008080','clipPath': 'polygon(0 0, 11% 89%, 100% 100%, 0% 100%)'
+        position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080','clipPath': 'polygon(0 0, 11% 89%, 100% 100%, 0% 100%)'
       })),
       state('works', style({
-        width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 11% 70%, 100% 100%, 0% 100%)'
+        position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 11% 70%, 100% 100%, 0% 100%)'
       })),
       state('services', style({
-        width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 55% 73%, 100% 100%, 0% 100%)'
+        position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 55% 73%, 100% 100%, 0% 100%)'
       })),
       state('testimony', style({
-         width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 45% 27%, 100% 100%, 0% 100%)'
+         position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 45% 27%, 100% 100%, 0% 100%)'
       })),
       transition('* => works', animate('500ms linear', keyframes([
           style({ 'clipPath': 'polygon(0 0, 11% 70%, 100% 100%, 0% 100%)'}),
