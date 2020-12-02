@@ -1,0 +1,15 @@
+.menus {
+  display: grid;
+  justify-content: space-between;
+}
+
+.item {
+  display: block;
+  width: 100%;
+}
+
+.item span{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
