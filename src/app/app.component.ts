@@ -33,8 +33,8 @@ const right = [
   styleUrls: ['./app.component.css'],
   animations: [
     trigger('outletAnimation', [
-      transition('* => home', left),
-      transition('home => *', right),
+      transition('* => home', right),
+      transition('home => *', left),
       transition('* => testimony', right),
       transition('testimony => *', left),
 
