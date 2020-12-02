@@ -21,3 +21,9 @@ a.current::before{
   width: 24px;
 }
 
+.main__outlet {
+    width: 30%;
+    height: 642px;
+    background-color: #008080;
+    clip-path: polygon(0 0, 59% 41%, 100% 100%, 0% 100%);
+}

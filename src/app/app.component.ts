@@ -1,5 +1,5 @@
 import { query, style, animate, group, transition, trigger  } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 
@@ -43,8 +43,13 @@ const right = [
     ])
   ],
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+
   title = 'blog';
+
+  ngOnInit(): void {
+
+  }
 
   preparedRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
