@@ -56,7 +56,9 @@ export class AppComponent implements OnInit{
   }
 
   preparedRoute(outlet: RouterOutlet) {
+    console.log(outlet.activatedRouteData.animation);
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+
   }
 
 
