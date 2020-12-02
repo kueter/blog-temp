@@ -1,4 +1,4 @@
-import { query, style, animate, group, transition, trigger  } from '@angular/animations';
+import { query, style, animate, group, transition, trigger, state, keyframes  } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -40,6 +40,24 @@ const right = [
 
       transition('works => services', left),
       transition('services => works', right),
+    ]),
+    trigger('clip', [
+      state('home', style({
+        width: '40%', height: '642px', 'background-color':'#008080'
+      })),
+      state('works', style({
+        width: '40%', height: '642px', 'background-color':'#008080'
+      })),
+      state('services', style({
+        width: '40%', height: '642px', 'background-color':'#008080'
+      })),
+      state('testimony', style({
+         width: '40%', height: '642px', 'background-color':'#008080'
+      })),
+      transition('home => works', animate('1000ms',keyframes([
+          style({ offset: 0 , 'clipPath': 'polygon(0 0, 59% 89%, 100% 100%, 0% 100%)'}),
+          style({ offset: 1 , 'clipPath': 'polygon(0 0, 59% 70%, 100% 100%, 0% 100%)'}),
+      ])))
     ])
   ],
 })
