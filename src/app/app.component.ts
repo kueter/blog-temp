@@ -46,6 +46,7 @@ const right = [
 export class AppComponent implements OnInit{
 
   title = 'blog';
+  anima: any;
 
   constructor() {
 
@@ -56,9 +57,8 @@ export class AppComponent implements OnInit{
   }
 
   preparedRoute(outlet: RouterOutlet) {
-    console.log(outlet.activatedRouteData.animation);
+    this.anima = outlet.activatedRouteData.animation;
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
-
   }
 
 
