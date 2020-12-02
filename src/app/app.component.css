@@ -25,5 +25,25 @@ a.current::before{
     width: 30%;
     height: 642px;
     background-color: #008080;
-    clip-path: polygon(0 0, 59% 41%, 100% 100%, 0% 100%);
+    animation: bgclip 8s linear forwards;
 }
+
+
+@keyframes bgclip {
+
+  0% {
+    clip-path: polygon(0 0, 59% 63%, 100% 100%, 0% 100%);
+  }
+  25% {
+    clip-path: polygon(0 0, 59% 47%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 59% 38%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 59% 25%, 100% 100%, 0% 100%);
+  }
+
+}
+
+
