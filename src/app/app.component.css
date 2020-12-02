@@ -22,5 +22,30 @@ a.current::before{
 }
 
 
+.main__outlet {
+  margin-top: 80px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+@media only screen and (max-width:600px) {
+  nav > ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .clip {
+    display: none;
+  }
+
+
+}
+
 
 

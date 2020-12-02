@@ -43,16 +43,16 @@ const right = [
     ]),
     trigger('clip', [
       state('home', style({
-        position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080','clipPath': 'polygon(0 0, 11% 89%, 100% 100%, 0% 100%)'
+        position: 'absolute', top:'0%' , 'z-index':'-20', width: '70%', height: '642px', 'background-color':'#008080','clipPath': 'polygon(0 0, 45% 30%, 100% 100%, 0% 100%)'
       })),
       state('works', style({
-        position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 11% 70%, 100% 100%, 0% 100%)'
+        position: 'absolute', top:'0%' , 'z-index':'-20', width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 11% 70%, 100% 100%, 0% 100%)'
       })),
       state('services', style({
-        position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 55% 73%, 100% 100%, 0% 100%)'
+        position: 'absolute', top:'0%' , 'z-index':'-20', width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 55% 73%, 100% 100%, 0% 100%)'
       })),
       state('testimony', style({
-         position: 'absolute', top:'0%' , width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 45% 27%, 100% 100%, 0% 100%)'
+         position: 'absolute', top:'0%' , 'z-index':'-20', width: '70%', height: '642px', 'background-color':'#008080', 'clipPath': 'polygon(0 0, 45% 92%, 100% 100%, 0% 100%)'
       })),
       transition('* => works', animate('500ms linear', keyframes([
           style({ 'clipPath': 'polygon(0 0, 11% 70%, 100% 100%, 0% 100%)'}),
@@ -61,10 +61,10 @@ const right = [
         style({ 'clipPath': 'polygon(0 0, 55% 73%, 100% 100%, 0% 100%)'}),
       ]))),
       transition('* => testimony', animate('500ms linear', keyframes([
-        style({ 'clipPath': 'polygon(0 0, 45% 27%, 100% 100%, 0% 100%)'}),
+        style({ 'clipPath': 'polygon(0 0, 45% 92%, 100% 100%, 0% 100%)'}),
       ]))),
       transition('* => home', animate('500ms linear',keyframes([
-        style({'clipPath': 'polygon(0 0, 11% 89%, 100% 100%, 0% 100%)'}),
+        style({'clipPath': 'polygon(0 0, 45% 30%, 100% 100%, 0% 100%)'}),
       ]))),
     ])
   ],
