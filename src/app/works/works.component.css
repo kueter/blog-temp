@@ -29,12 +29,14 @@ a.item-active {
   background-color: #008080;
 }
 
-
-
-a.item-active .fa-bars-progress, .fa-gear, span {
+a.item-active .fa-bars-progress, a.item-active .fa-gear, a.item-active span {
   color: #FFFF!important;
 }
 
 .mgt {
   margin-top: 32px;
+}
+
+.card-header {
+  border: none;
 }
