@@ -3,25 +3,18 @@
   height: 100%;
 }
 
-.item {
 
-}
 
-.item span {
+a  span {
   margin-left: 15px;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 12px;
   font-weight: bold;
-  color: rgb(124, 128, 128);
+  color: rgb(124, 128, 128)!important;
 }
 
-.item a {
-  display: block;
-  padding: .67rem .80rem;
-  border-radius: .35rem;
-}
 
-.item .fa-bars-progress, .fa-gear {
+a .fa-bars-progress, .fa-gear {
   color: rgb(124, 128, 128);
 }
 
@@ -32,6 +25,7 @@ a.active {
 a.active .fa-bars-progress, a.active .fa-gear, a.active span {
   color: #FFFF!important;
 }
+
 
 .mgt {
   margin-top: 32px;
