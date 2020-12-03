@@ -88,3 +88,7 @@ a.active span {
 .form-control{
   border: 2px solid #7e8083;
 }
+
+.fa-angular {
+  color: rgb(192, 31, 31);
+}
