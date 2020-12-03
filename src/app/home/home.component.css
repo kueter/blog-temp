@@ -29,6 +29,11 @@
 }
 
 
+.ps-0 {
+  position: absolute;
+  top: 38%;
+}
+
 .presentation {
   text-align: justify;
   font-family: 'Nanum Brush Script', cursive;

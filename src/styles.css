@@ -19,3 +19,7 @@ a ,button i {
 .cursor {
   cursor: pointer;
 }
+
+.p-r {
+  position: relative;
+}
