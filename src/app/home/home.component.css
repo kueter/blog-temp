@@ -31,13 +31,18 @@
 
 .ps-0 {
   position: absolute;
-  top: 38%;
+  top: 45%;
+  left: -9%;
+}
+
+.fa-circle-chevron-left {
+  color:  rgb(79, 82, 82);
 }
 
 .presentation {
   text-align: justify;
   font-family: 'Nanum Brush Script', cursive;
-  color:  rgb(79, 82, 82) ;
+  color:  rgb(79, 82, 82);
 }
 
 .presentation span {

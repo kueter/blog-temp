@@ -3,7 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ScrollpyDirective } from './scrollpy.directive';
+
+import {
+  PerfectScrollbarModule,
+  PERFECT_SCROLLBAR_CONFIG,
+  PerfectScrollbarConfigInterface,
+} from 'ngx-perfect-scrollbar';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
@@ -12,10 +17,13 @@ import { WorksComponent } from './works/works.component';
 import { TestimonyComponent } from './testimony/testimony.component';
 
 
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true,
+};
+
 @NgModule({
   declarations: [
     AppComponent,
-    ScrollpyDirective,
     HomeComponent,
     PricingComponent,
     WorksComponent,
@@ -26,7 +34,14 @@ import { TestimonyComponent } from './testimony/testimony.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: PERFECT_SCROLLBAR_CONFIG,
+      // DROPZONE_CONFIG,
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
+      // DEFAULT_DROPZONE_CONFIG,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
