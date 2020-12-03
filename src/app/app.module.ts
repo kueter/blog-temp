@@ -32,6 +32,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PerfectScrollbarModule,
     BrowserAnimationsModule
   ],
   providers: [

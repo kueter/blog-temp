@@ -20,7 +20,10 @@
               <div class="col-md-12">
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                      <div *ngIf="view === false" class="row">
+                    <perfect-scrollbar style="width: 100%;  height: 255px; padding-right: 10px;">
+
+                    </perfect-scrollbar>
+                    <div *ngIf="view === false" class="row">
                           <div class="col-md-3" *ngFor="let item of [].constructor(12)">
                             <div class="card m-2">
                                 <div class="card-body text-center cursor">
