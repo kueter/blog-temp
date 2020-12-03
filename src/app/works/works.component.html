@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-9">
         <div class="card cs">
-          <div class="card-header">
+          <div class="card-header p-2">
             <div class="pav">
               <input type="text" class="form-control">
               <i class="far fa-magnifying-glass"></i>
@@ -32,12 +32,9 @@
 
                       <div *ngIf="view === true" class="row">
                           <div class="col-md-6" *ngFor="let item of [].constructor(4)">
-                            <div class="card m-2">
-                                <div class="card-body">
-                                    <button class="btn float-right">
-                                      <i class="fal fa-ellipsis-stroke-vertical"></i>
-                                    </button>
-
+                            <div class="card m-2 h25">
+                                <div class="card-body p-1">
+                                    <span class="float-right"><i class="fal fa-ellipsis-stroke-vertical"></i></span>
                                      <i class="fab fa-angular fa-2x"></i>
                                 </div>
                             </div>

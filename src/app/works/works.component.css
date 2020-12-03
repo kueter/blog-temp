@@ -27,6 +27,10 @@ a .fa-bezier-curve
   color: rgb(124, 128, 128);
 }
 
+.h25 {
+  height: 200px;
+}
+
 a.active {
   background-color: #008080!important;
 }
