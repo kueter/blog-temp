@@ -29,6 +29,12 @@ a .fa-bezier-curve
 
 .h25 {
   height: 200px;
+  background-color: rgb(192, 31, 31);
+}
+
+
+.h25 .fa-angular , .h25 .fa-ellipsis-stroke-vertical{
+  color: #FFFF;
 }
 
 a.active {
