@@ -1,0 +1,15 @@
+.p__services {
+  width: 70%;
+
+  height: 500px;
+}
+
+
+.s__detail {
+  width: 30%;
+  height: 500px;
+}
+
+.dflex {
+  display: flex;
+}
