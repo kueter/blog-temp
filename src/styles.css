@@ -15,3 +15,7 @@ body {
 a ,button i {
   cursor: pointer;
 }
+
+.cursor {
+  cursor: pointer;
+}
