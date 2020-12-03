@@ -18,4 +18,5 @@ export class WorksComponent implements OnInit {
     this.view = !this.view;
   }
 
+
 }

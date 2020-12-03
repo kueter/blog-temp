@@ -6,16 +6,15 @@
           <div class="card-header">
             <div class="pav">
               <input type="text" class="form-control">
-              <button type="button" class="btn">
+              <button *ngIf="this.view === false" type="button" class="btn" (click)="switchView()">
                 <i class="far fa-table-cells"></i>
               </button>
-              <button type="button" class="btn">
+              <button *ngIf="this.view === true" type="button" class="btn" (click)="switchView()">
                 <i class="far fa-table-cells-large"></i>
               </button>
             </div>
           </div>
           <div class="card-body">
-
             <div class="row">
               <div class="col-md-12">
                 <div class="tab-content" id="v-pills-tabContent">
@@ -31,7 +30,11 @@
                       </div>
 
                       <div *ngIf="view === true" class="row">
-                          <div class="col-md-6" *ngFor="let item of [].constructor(4)"></div>
+                          <div class="col-md-6" *ngFor="let item of [].constructor(4)">
+                            <div class="card m-2">
+                                <div class="card-body"></div>
+                            </div>
+                          </div>
                       </div>
                   </div>
                   <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">B</div>
@@ -43,14 +46,12 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
       <div class="col-md-3">
         <div class="card cs">
           <div class="card-body">
-
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-1" role="tab"
                 aria-controls="v-pills-1" aria-selected="true">
