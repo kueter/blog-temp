@@ -43,10 +43,11 @@ a.active .fa-bars-progress, a.active .fa-gear, a.active span {
   position: relative;
 }
 
-.pav .fa-search {
+.pav .fa-magnifying-glass {
   position: absolute;
-  top: 20%;
-  right: 20%;
+  top: 33%;
+  left: 1.7%;
+  color:  #7e8083;
 }
 
 .pav input {
