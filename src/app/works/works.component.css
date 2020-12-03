@@ -25,11 +25,11 @@
   color: rgb(124, 128, 128);
 }
 
-a.item-active {
-  background-color: #008080;
+a.active {
+  background-color: #008080!important;
 }
 
-a.item-active .fa-bars-progress, a.item-active .fa-gear, a.item-active span {
+a.active .fa-bars-progress, a.active .fa-gear, a.active span {
   color: #FFFF!important;
 }
 
