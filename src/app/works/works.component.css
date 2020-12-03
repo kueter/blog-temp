@@ -51,7 +51,7 @@ a.item-active .fa-bars-progress, a.item-active .fa-gear, a.item-active span {
 .pav input {
   width: 80%;
   padding: .3rem .7rem;
-  border: 1px solid #7e8083;
+  border: 1px solid #7e8083!important;
 }
 
 .pav > input:focus{
@@ -65,4 +65,11 @@ a.item-active .fa-bars-progress, a.item-active .fa-gear, a.item-active span {
   border: none;
 }
 
+.btn:focus ,.btn:active{
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .125);
+}
 
+.fa-table-cells, .fa-table-cells-large {
+  color: #7e8083;
+}
