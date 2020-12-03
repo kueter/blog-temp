@@ -13,3 +13,11 @@
 .dflex {
   display: flex;
 }
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.fa-xmark {
+  color: rgb(124, 128, 128);
+}
