@@ -14,7 +14,12 @@ a  span {
 }
 
 
-a .fa-bars-progress, .fa-gear {
+a .fa-angular,
+a .fa-laravel,
+a .fa-react,
+a .fa-mobile,
+a .fa-bezier-curve
+{
   color: rgb(124, 128, 128);
 }
 
@@ -22,7 +27,12 @@ a.active {
   background-color: #008080!important;
 }
 
-a.active .fa-bars-progress, a.active .fa-gear, a.active span {
+a.active .fa-angular,
+a.active .fa-laravel,
+a.active .fa-react,
+a.active .fa-mobile,
+a.active .fa-bezier-curve,
+a.active span {
   color: #FFFF!important;
 }
 
