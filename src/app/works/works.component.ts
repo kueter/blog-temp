@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorksComponent implements OnInit {
 
+  view = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  switchView() {
+    this.view = !this.view;
   }
 
 }
