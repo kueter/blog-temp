@@ -1,11 +1,14 @@
 .p__services {
+  height: 530px;
   overflow: hidden!important;
+  transition: width .3s ease-in-out;
 }
 
 
 .s__detail {
-  height: 500px;
+  height: 530px;
   overflow: hidden!important;
+  transition: width .3s ease-in-out;
 }
 
 .dflex {
@@ -38,10 +41,9 @@
 }
 
 .ctex {
-  width: 100%;
-  height: 75%;
+  width: 80%;
+  height: 60%;
   display: grid;
-  justify-content: space-between;
 }
 
 .item small {

@@ -1,45 +1,34 @@
 <div class="row">
     <div class="col-md-11 mx-auto dflex">
-        <div class="p__services" [ngStyle]="{'width: 100%': _v === false, 'width: 70%': _v === true}">
+        <div class="p__services" [ngStyle]="_v === true ? {'width':'70%'}:{'width':'100%'}">
             <div class="row">
-                <div class="col-md-3" *ngFor="let item of [].constructor(8)">
-                  <div class="card m-2 hc bxs p-2">
-                    <div class="card-body text-center">
+                <div class="col-md-3" *ngFor="let item of prices">
+                  <div class="card m-2 hc bxs ">
+                    <div class="card-body text-center p-2">
                         <div class="title">
-                            <h4>{{'Service'}}</h4>
+                            <h6><b>{{item?.name}}</b></h6>
                         </div>
                         <div class="ctex">
-                            <div class="item">
-                              <i class="fal fa-square-check"></i>
-                              <small>{{'option'}}</small>
-                            </div>
-                            <div class="item">
-                              <i class="fal fa-square-check"></i>
-                              <small>{{'option'}}</small>
-                            </div>
-                            <div class="item">
-                              <i class="fal fa-square-check"></i>
-                              <small>{{'option'}}</small>
-                            </div>
-                            <div class="item">
-                              <i class="fal fa-square"></i>
-                              <small>{{'option'}}</small>
+                            <div class="item" *ngFor="let ite of item?.option">
+                              <i *ngIf="ite?.state === true" class="fal fa-square-check"></i>
+                              <i *ngIf="ite?.state === false" class="fal fa-square"></i>
+                              <small>{{ite?.name}}</small>
                             </div>
                         </div>
-                        <div class="mt-2">
-                            <button type="button" class="btn btn-p" (click)="toogleV()"><small>{{'Info +'}}</small></button>
+                        <div class="mt-1">
+                            <button type="button" class="btn btn-p" (click)="toogleV(item)"><small>{{'Info +'}}</small></button>
                         </div>
                     </div>
                   </div>
                 </div>
             </div>
         </div>
-        <div class="s__detail" [ngStyle]="{'width: 0%': _v === false, 'width: 30%': _v === true}">
+        <div class="s__detail" [ngStyle]="_v === true ? {'width':'30%'}:{'width':'0%'}">
           <div class="row">
               <div class="col-md-12">
                 <div class="card m-2 cs">
                   <div class="card-body p-2">
-                        <button type="button" class="btn float-right"><i class="far fa-xmark"></i></button>
+                        <button type="button" class="btn float-right" (click)="closeV()"><i class="far fa-xmark"></i></button>
                   </div>
                 </div>
               </div>
