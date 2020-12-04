@@ -1,13 +1,12 @@
 .p__services {
-  width: 70%;
-
   height: 500px;
+  overflow: hidden;
 }
 
 
 .s__detail {
-  width: 30%;
   height: 500px;
+  overflow: hidden;
 }
 
 .dflex {

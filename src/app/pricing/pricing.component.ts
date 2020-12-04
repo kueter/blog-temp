@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingComponent implements OnInit {
 
+  _v = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  toogleV() {
+    this._v = !this._v;
   }
 
 }
