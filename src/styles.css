@@ -23,3 +23,7 @@ a ,button i {
 .p-r {
   position: relative;
 }
+
+.bxs {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .125);
+}
