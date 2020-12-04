@@ -41,7 +41,6 @@ export class PricingComponent implements OnInit {
     this._v = false;
   }
 
-
   scrollU() {
     this._s = !this._s;
   }
