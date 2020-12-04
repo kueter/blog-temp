@@ -1,12 +1,11 @@
 .p__services {
-  height: 500px;
-  overflow: hidden;
+  overflow: hidden!important;
 }
 
 
 .s__detail {
   height: 500px;
-  overflow: hidden;
+  overflow: hidden!important;
 }
 
 .dflex {

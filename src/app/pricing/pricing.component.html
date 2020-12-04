@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-11 mx-auto dflex">
-        <div class="p__services">
+        <div class="p__services" [ngStyle]="{'width: 100%': _v === false, 'width: 70%': _v === true}">
             <div class="row">
                 <div class="col-md-3" *ngFor="let item of [].constructor(8)">
                   <div class="card m-2 hc bxs p-2">
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="s__detail">
+        <div class="s__detail" [ngStyle]="{'width: 0%': _v === false, 'width: 30%': _v === true}">
           <div class="row">
               <div class="col-md-12">
                 <div class="card m-2 cs">
