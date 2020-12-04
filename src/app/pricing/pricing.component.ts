@@ -23,6 +23,8 @@ export class PricingComponent implements OnInit {
     { name: 'service_9', option: [ { name:'option_A', state: false},{ name:'option_B', state: true}]},
   ];
 
+  _s = false;
+
  constructor() { }
 
   ngOnInit(): void {
@@ -37,6 +39,11 @@ export class PricingComponent implements OnInit {
 
   closeV() {
     this._v = false;
+  }
+
+
+  scrollU() {
+    this._s = !this._s;
   }
 
 }

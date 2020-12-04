@@ -1,38 +1,46 @@
 <div class="row">
-    <div class="col-md-11 mx-auto dflex">
-        <div class="p__services" [ngStyle]="_v === true ? {'width':'70%'}:{'width':'100%'}">
-            <div class="row">
-                <div class="col-md-3" *ngFor="let item of prices">
-                  <div class="card m-2 hc bxs ">
-                    <div class="card-body text-center p-2">
-                        <div class="title">
-                            <h6><b>{{item?.name}}</b></h6>
-                        </div>
-                        <div class="ctex">
-                            <div class="item" *ngFor="let ite of item?.option">
-                              <i *ngIf="ite?.state === true" class="fal fa-square-check"></i>
-                              <i *ngIf="ite?.state === false" class="fal fa-square"></i>
-                              <small>{{ite?.name}}</small>
-                            </div>
-                        </div>
-                        <div class="mt-1">
-                            <button type="button" class="btn btn-p" (click)="toogleV(item)"><small>{{'Info +'}}</small></button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="s__detail" [ngStyle]="_v === true ? {'width':'30%'}:{'width':'0%'}">
-          <div class="row">
-              <div class="col-md-12">
-                <div class="card m-2 cs">
-                  <div class="card-body p-2">
-                        <button type="button" class="btn float-right" (click)="closeV()"><i class="far fa-xmark"></i></button>
-                  </div>
+  <div class="col-md-11 mx-auto dflex">
+    <div class="p__services" [ngStyle]="_v === true ? {'width':'70%'}:{'width':'100%'}">
+      <div class="row">
+        <div class="col-md-3" *ngFor="let item of prices">
+          <div class="card m-2 hc bxs ">
+            <div class="card-body text-center p-2">
+              <div class="title">
+                <h6><b>{{item?.name}}</b></h6>
+              </div>
+              <div class="ctex">
+                <div class="item" *ngFor="let ite of item?.option">
+                  <i *ngIf="ite?.state === true" class="fal fa-square-check"></i>
+                  <i *ngIf="ite?.state === false" class="fal fa-square"></i>
+                  <small>{{ite?.name}}</small>
                 </div>
               </div>
+              <div class="mt-1">
+                <button type="button" class="btn btn-p" (click)="toogleV(item)"><small>{{'Info +'}}</small></button>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
     </div>
+    <div class="s__detail" [ngStyle]="_v === true ? {'width':'30%'}:{'width':'0%'}">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card m-2 cs">
+            <div class="card-body p-2">
+              <button type="button" class="btn float-right" (click)="closeV()"><i class="far fa-xmark"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<button *ngIf="_s === true" class="btn pbs" (click)="scrollU()">
+  <i  class="far fa-circle-chevron-up fa-2x"></i>
+</button>
+<button *ngIf="_s === false" class="btn pbs" (click)="scrollU()">
+  <i  class="far fa-circle-chevron-down fa-2x"></i>
+</button>
