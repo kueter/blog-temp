@@ -46,7 +46,14 @@
   justify-content: space-between;
 }
 
-
 .item small {
   margin-left: 25px;
+}
+
+
+.active-p {
+  width: 70%;
+  background-color: #ffff;
+  border: 2px solid #008080;
+  font-weight: bold;
 }
