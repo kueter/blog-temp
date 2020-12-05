@@ -29,7 +29,7 @@ a .fa-bezier-curve
 
 .h25 {
   height: 200px;
-  background-color: rgb(192, 31, 31);
+  /* background-color: rgb(192, 31, 31); */
 }
 
 
@@ -55,7 +55,7 @@ a.active span {
   margin-top: 32px;
 }
 
-.card-header {
+.card-head {
   border: none;
   background-color: #FFFF;
 }
@@ -109,4 +109,32 @@ a.active span {
 
 .o {
   overflow: hidden;
+}
+
+.hch {
+  display: flex;
+}
+
+.w-color {
+  color: #FFFF;
+}
+
+.fcad {
+  background-color: transparent;
+  border-top: none;
+}
+
+.hcad {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+
+.card.icad:hover {
+  background-color: rgba(51, 44, 44, 0)!important;
+}
+
+
+.icad .fa-angular {
+    color: rgb(192, 31, 31);
 }

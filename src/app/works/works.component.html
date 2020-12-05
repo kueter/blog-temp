@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-9">
         <div class="card cs o">
-          <div class="card-header p-2">
+          <div class="card-header card-head p-2">
             <div class="pav">
               <input type="text" class="form-control">
               <i class="far fa-magnifying-glass"></i>
@@ -21,8 +21,8 @@
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
                     <perfect-scrollbar style="width: 100%;  height: 455px; padding-right: 10px;">
-                      <div *ngIf="view === false" class="row mdle">
-                        <div class="col-md-3" *ngFor="let item of [].constructor(13)">
+                      <div *ngIf="view === true" class="row mdle">
+                        <div class="col-md-3" *ngFor="let item of angularProjects">
                           <div class="card m-2">
                               <div class="card-body text-center cursor">
                                     <i class="fab fa-angular fa-5x"></i>
@@ -31,12 +31,30 @@
                         </div>
                     </div>
 
-                    <div *ngIf="view === true" class="row large">
-                        <div class="col-md-6" *ngFor="let item of [].constructor(7)">
-                          <div class="card m-2 h25">
+                    <div *ngIf="view === false" class="row large">
+                        <div class="col-md-6" *ngFor="let item of angularProjects">
+                          <div class="card icad m-2 h25">
+                              <div class="card-header hcad p-1">
+                                <i class="fab fa-angular fa-2x"></i>
+                                <small class="ml-2">{{item?.name}}</small>
+                              </div>
                               <div class="card-body p-1">
-                                  <span class="float-right"><i class="fal fa-ellipsis-stroke-vertical"></i></span>
-                                   <i class="fab fa-angular fa-2x"></i>
+                                  <div class="hch">
+                                    <!-- <span class="float-right"><i class="fal fa-ellipsis-stroke-vertical"></i></span> -->
+                                  </div>
+                              </div>
+                              <div class="card-footer fcad p-1">
+                                   <div class="float-left"></div>
+                                   <div class="float-right">
+                                     <span>
+                                       <i class="fal fa-eye mr-1"></i>{{item?.views}}
+                                     </span>
+                                     &nbsp;
+                                     <span>
+                                      <i class="fal fa-thumbs-up mr-1"></i>{{item?.claps}}
+                                    </span>
+                                   </div>
+
                               </div>
                           </div>
                         </div>

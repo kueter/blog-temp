@@ -11,6 +11,16 @@ export class WorksComponent implements OnInit {
 
   view = false;
 
+  angularProjects = [
+    { name: 'Dashboard Template UI angular 9', preload: '', views: 210 , claps: 20},
+    { name: 'Blog Template UI angular 9', preload: '', views: 110 , claps: 10},
+    { name: 'E-shop Fresh Template UI angular 9 ', preload: '', views: 200 , claps: 170},
+    { name: 'E-shoes Template UI angular 9', preload: '', views: 210 , claps: 20},
+    { name: 'E-Dashboard UI dev components angular 9', preload: '', views: 100 , claps: 19},
+    { name: 'Chat Box Bot UI angular 9', preload: '', views: 1000 , claps: 409},
+    { name: 'Photo Gallery UI angular 9', preload: '', views: 780 , claps: 309}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
