@@ -43,9 +43,14 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     // this.toast();
     this.ContactF = new FormGroup({
-      name: new FormControl('', [Validators.required,]),
-      email: new FormControl('', [Validators.required,]),
-      message: new FormControl('', [Validators.required,]),
+      name: new FormControl('', [Validators.required,Validators.minLength(2)]),
+      email: new FormControl('', [
+        Validators.required,
+        Validators.pattern(
+          '[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}'
+        ),
+      ]),
+      message: new FormControl('', [Validators.required,Validators.minLength(150)]),
     });
   }
 
