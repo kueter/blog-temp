@@ -35,7 +35,7 @@
   left: 9%;
 }
 
-.ps-0  .btn {
+.ps-0  .btn, .actions .btn {
   background-color: #008080;
 }
 
