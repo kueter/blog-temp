@@ -22,7 +22,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
           ':leave',
           [
             style({ opacity: 1 }),
-            animate('.6s ease-in',
+            animate('.3s ease-in',
                     style({ height: 0, opacity: 0 }))
           ]
         )
@@ -47,6 +47,18 @@ export class HomeComponent implements OnInit {
 
   togContact() {
     this._c = !this._c;
+  }
+
+  get name() {
+    return this.ContactF.get('name');
+  }
+
+  get email() {
+    return this.ContactF.get('email');
+  }
+
+  get message() {
+    return this.ContactF.get('message');
   }
 
 }
