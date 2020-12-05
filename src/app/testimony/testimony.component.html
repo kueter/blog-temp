@@ -1,40 +1,78 @@
-
 <div class="row">
   <div class="col-md-10 mx-auto">
     <perfect-scrollbar style="width: 100%;  height: 520px; padding-right: 20px;">
-    <div class="row">
-      <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-8">
           <div class="row">
-              <div class="col-md-12">
-                <div class="card no-border hv">
-                  <div class="card-body p-0 cb">
-                      <img class="img-card" width="100%" height="350px" src="../../assets/img/1200px-Pocket_Watch_(Savonette).jpg" alt="">
-                  </div>
-                  <div class="card-footer p-2">
-                      <span class="title">{{'Life style'}}</span>
-                      <h2 class="title-h">{{'The Future of South Lies in Secret'}}</h2>
-                      <span class="times">
+            <div class="col-md-12">
+              <div class="card hv">
+                <div class="card-body p-0 cb">
+                  <img class="img-card" width="100%" height="350px"
+                    src="../../assets/img/1200px-Pocket_Watch_(Savonette).jpg" alt="">
+                </div>
+                <div class="card-footer p-2">
+                  <span class="title">{{'Life style'}}</span>
+                  <h2 class="title-h">{{'The Future of South Lies in Secret'}}</h2>
+                  <span class="times">
+                    <h6>{{'Edward Koss'}}</h6>
+                    <span>{{'April 15, 2020'}}</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+              <div class="col-md-6" *ngFor="let ite of [].constructor(3)">
+                  <div class="card mt-2 hv">
+                      <div class="card-body p-0 cb">
+                        <img class="img-card" width="100%" height="150px" src="../../assets/img/1200px-Pocket_Watch_(Savonette).jpg" alt="">
+                      </div>
+                      <div class="card-footer p-2">
+                        <span class="title">{{'Life style'}}</span>
+                        <h5 class="title-h">{{'The Future of South'}}</h5>
+                        <span class="times">
                           <h6>{{'Edward Koss'}}</h6>
                           <span>{{'April 15, 2020'}}</span>
-                      </span>
+                        </span>
+                      </div>
                   </div>
               </div>
-              </div>
           </div>
-      </div>
-      <div class="col-md-4">
-       <div class="row">
-         <div class="col-md-12">
-          <div class="card">
-            <div class="card-body p-2">
-
-            </div>
         </div>
-         </div>
-       </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card h_25">
+                <div class="card-body p-2">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="card h_75">
+                <div class="card-body p-2">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="card h_10">
+                <div class="card-body p-2">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-  </perfect-scrollbar>
+    </perfect-scrollbar>
 
   </div>
 </div>

@@ -39,3 +39,19 @@
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
+
+.card-footer {
+  background-color: #fff;
+}
+
+.h_25 {
+  height: 200px;
+}
+
+.h_75 {
+  height: 450px;
+}
+
+.h_10 {
+  height: 100px;
+}
