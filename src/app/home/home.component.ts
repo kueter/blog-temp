@@ -78,6 +78,10 @@ export class HomeComponent implements OnInit {
 
   toast() {
     $(".ntoast").fadeIn()
-    .animate({bottom: '5%'}, 1000);
+    .animate({bottom: '5%'}, 1000,() => {
+      $(".ntoast").fadeOut()
+    .animate({
+      bottom: '-10%'}, 3000)
+    });
   }
 }
