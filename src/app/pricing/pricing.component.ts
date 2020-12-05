@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+
+declare var $: any;
 
 @Component({
   selector: 'app-pricing',
@@ -41,8 +43,23 @@ export class PricingComponent implements OnInit {
     this._v = false;
   }
 
+
+
+  @HostListener('window:scroll', [])
   scrollU() {
     this._s = !this._s;
+
+    if (this._s === true) {
+      $('scroll_p').animate({
+        scrollTop: $('scroll_p')[0].scrollHeight - $('scroll_p')[0].clientHeight
+      }, 1000);
+    }
+
+    if (this._s === false) {
+      $('scroll_p').animate({
+        scrollTop: 0
+      }, 1000);
+    }
   }
 
 }
