@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
 
   ContactF: FormGroup;
   _c =false;
+  spin = false;
 
   constructor() { }
 

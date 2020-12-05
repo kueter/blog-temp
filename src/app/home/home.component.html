@@ -47,8 +47,8 @@
                           </div>
 
                           <div class="actions mt-3">
-                              <button class="btn">
-                                  <i class="fas fa-spinner fa-spin mr-2"></i>
+                              <button class="btn" [disabled]="ContactF?.invalid">
+                                  <i *ngIf="spin == true" class="fas fa-spinner fa-spin mr-2"></i>
                                   <small><b>{{'Send mail'}}</b></small>
                               </button>
                           </div>
