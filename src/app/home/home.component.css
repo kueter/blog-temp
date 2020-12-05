@@ -184,3 +184,19 @@ input:focus + label {
   border-radius: .35rem;
   z-index: -30;
 }
+
+.vcolor {
+  color: #008080;
+}
+
+.dcolor {
+  color: brown;
+}
+
+.bvcolor {
+  background-color: #008080;
+}
+
+.bdcolor {
+    background-color:  brown;
+}

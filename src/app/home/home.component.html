@@ -34,14 +34,19 @@
                         </div>
                         <form  [formGroup]="ContactF">
                           <div class="field">
+                              <small >{{'Name is required'}}</small>
+                              <small >{{'Invalid Enter'}}</small>
+                              <small >{{'Valid'}}</small>
                             <input type="text"  id="name"  formControlName="name" placeholder="Edward Koss">
                             <label for="name"><i class="far fa-user mr-2"></i>{{'Name'}}</label>
                           </div>
                           <div class="field">
+                              <small >{{'Invalid Enter'}}</small>
                             <input type="text"  id="email"  formControlName="email" placeholder="Ek@example.com">
                             <label for="email"><i class="far fa-envelope mr-2"></i>{{'Email'}}</label>
                           </div>
                           <div class="field">
+                              <small>{{'Invalid Enter'}}</small>
                             <textarea cols="40" rows="5" id="message"  formControlName="message" placeholder="Put your Message Here not less 150 words"></textarea>
                             <label for="message"><i class="far fa-paragraph mr-2"></i>{{'Message'}}</label>
                           </div>
