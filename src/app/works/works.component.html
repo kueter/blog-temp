@@ -38,7 +38,7 @@
                                 <i class="fab fa-angular fa-2x"></i>
                                 <small class="ml-2">{{item?.name}}</small>
                               </div>
-                              <div class="card-body p-1">
+                              <div class="card-body p-0" [style.background]="'url('+item?.preload +')'">
                                   <div class="hch">
                                     <!-- <span class="float-right"><i class="fal fa-ellipsis-stroke-vertical"></i></span> -->
                                   </div>
@@ -62,11 +62,35 @@
                     </perfect-scrollbar>
 
                   </div>
-                  <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">B</div>
-                  <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">C</div>
-                  <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">D</div>
-                  <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">e</div>
-                  <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">f</div>
+                  <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                      <div class="text-center mt-5">
+                        <h3 class="text-muted">{{'Not load for this time'}}</h3>
+                      </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                      <div class="text-center mt-5">
+                        <h3 class="text-muted">{{'Not load for this time'}}</h3>
+                      </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                      <div class="text-center mt-5">
+                        <h3 class="text-muted">{{'Not load for this time'}}</h3>
+                      </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+                      <div class="text-center mt-5">
+                        <h3 class="text-muted">{{'Not load for this time'}}</h3>
+                      </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+                      <div class="text-center mt-5">
+                        <h3 class="text-muted">{{'Not load for this time'}}</h3>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
