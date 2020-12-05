@@ -35,9 +35,15 @@
   left: -9%;
 }
 
-.fa-circle-chevron-left {
-  color:  rgb(79, 82, 82);
+.ps-0  .btn {
+  background-color: #008080;
 }
+
+.fa-chevron-left, .fa-chevron-right {
+  color: #fff;
+}
+
+
 
 .presentation {
   text-align: justify;
