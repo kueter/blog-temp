@@ -1,7 +1,10 @@
 .p__services {
-  height: 530px;
-  overflow: hidden!important;
   transition: width .3s ease-in-out;
+}
+
+.scroll_p {
+  overflow: hidden!important;
+  height: 530px;
 }
 
 

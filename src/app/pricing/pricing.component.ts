@@ -50,15 +50,15 @@ export class PricingComponent implements OnInit {
     this._s = !this._s;
 
     if (this._s === true) {
-      $('scroll_p').animate({
-        scrollTop: $('scroll_p')[0].scrollHeight - $('scroll_p')[0].clientHeight
-      }, 1000);
+      $('.scroll_p').animate({
+        scrollTop: $('.scroll_p')[0].scrollHeight - $('.scroll_p')[0].clientHeight
+      }, 600);
     }
 
     if (this._s === false) {
-      $('scroll_p').animate({
+      $('.scroll_p').animate({
         scrollTop: 0
-      }, 1000);
+      }, 600);
     }
   }
 
