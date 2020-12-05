@@ -2,6 +2,8 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
+declare var $: any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -68,6 +70,13 @@ export class HomeComponent implements OnInit {
     this.spin = true;
     setTimeout(() => {
       this.spin = false;
-    }, 3000);
+    }, 1000);
+  }
+
+
+  toast() {
+    $(document).ready(() => {
+      $('.ntoast').animate({width:'toggle'},350);
+    });
   }
 }

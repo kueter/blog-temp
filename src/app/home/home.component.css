@@ -169,3 +169,20 @@ input:focus + label {
 .actions .btn:focus {
   box-shadow: none;
 }
+
+
+.ntoast {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  overflow: hidden;
+  background-color: #008080;
+  color: #fff;
+  padding: .4rem;
+  box-shadow: 2px 1px 6px 3px rgba(0, 0, 0, .125);
+  border-radius: .35rem;
+}
+
+.information {
+  color: #fff;
+}
