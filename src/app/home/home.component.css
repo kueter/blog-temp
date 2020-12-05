@@ -30,16 +30,20 @@
 
 
 .ps-0 {
-  position: absolute;
+  position: fixed;
   top: 45%;
-  left: -9%;
+  left: 9.5%;
 }
 
 .ps-0  .btn {
   background-color: #008080;
 }
 
-.fa-chevron-left, .fa-chevron-right {
+.ps-0  .btn:focus {
+  box-shadow: none;
+}
+
+.fa-envelope {
   color: #fff;
 }
 

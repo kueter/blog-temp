@@ -4,13 +4,8 @@
       <div class="col-lg-8 col-md-8 col-sm-12 col-12">
         <div class="card bs">
           <div class="card-body">
-                <div class="row">
+                <div *ngIf="_c === false"  [@inOutAnimation] class="row">
                   <div class="col-md-10 mx-auto p-r">
-                    <div class="ps-0">
-                      <button class="btn ">
-                        <i class="far fa-chevron-left"></i>
-                      </button>
-                    </div>
                         <p class="presentation mt-4">
                           <span>{{'L'}}</span>orem ipsum dolor sit amet consectetur adipisicing elit.
                            Dolores reprehenderit magni deserunt minima? Animi aperiam aut quibusdam
@@ -30,6 +25,27 @@
                             Voluptates, aliquid reiciendis?
                         </p>
                   </div>
+                </div>
+
+                <div *ngIf="_c === true"  [@inOutAnimation] class="row">
+                    <div class="col-md-9 mx-auto">
+                        <form [formGroup]="ContactF">
+                          <div class="field">
+                            <input type="text"  id="name"  formControlName="name" placeholder="Edward Koss">
+                            <label for="name"><i class="fas fa-user mr-2"></i>{{'Name'}}</label>
+                          </div>
+                          <div class="field">
+                            <input type="text"  id="email"  formControlName="email" placeholder="Ek@example.com">
+                            <label for="email"><i class="fas fa-envelope mr-2"></i>{{'Email'}}</label>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ps-0">
+                  <button class="btn" (click)="togContact()">
+                    <i class="far fa-envelope"></i>
+                  </button>
                 </div>
           </div>
         </div>
