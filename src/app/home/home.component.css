@@ -165,3 +165,7 @@ input:focus + label {
 .actions .btn .fa-spinner {
   color: #fff;
 }
+
+.actions .btn:focus {
+  box-shadow: none;
+}

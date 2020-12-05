@@ -62,4 +62,12 @@ export class HomeComponent implements OnInit {
     return this.ContactF.get('message');
   }
 
+
+
+  send() {
+    this.spin = true;
+    setTimeout(() => {
+      this.spin = false;
+    }, 3000);
+  }
 }
