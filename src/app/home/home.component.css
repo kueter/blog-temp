@@ -75,6 +75,7 @@
   display: flex;
   flex-flow: column-reverse;
   margin-bottom: .6em;
+  position: relative;
 }
 /**
 * Add a transition to the label and input.
@@ -187,16 +188,22 @@ input:focus + label {
 
 .vcolor {
   color: #008080;
+  position: absolute;
+  top: 2%;
+  right: 3%;
 }
 
 .dcolor {
   color: brown;
+  position: absolute;
+  top: 2%;
+  right: 3%;
 }
 
 .bvcolor {
-  background-color: #008080;
+  border-color: #008080!important;
 }
 
 .bdcolor {
-    background-color:  brown;
+    border-color:  brown!important;
 }
