@@ -5,6 +5,10 @@
   border: none;
 }
 
+.fa-paper-plane {
+  color: #008080;
+}
+
 .ps {
   position: absolute;
   width: 100%;
@@ -32,7 +36,7 @@
 .ps-0 {
   position: fixed;
   top: 13.4%;
-  left: 9%;
+  left: 54%;
 }
 
 .ps-0  .btn {

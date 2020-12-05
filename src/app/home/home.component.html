@@ -29,10 +29,10 @@
 
                 <div *ngIf="_c === true"  [@inOutAnimation] class="row">
                     <div class="col-md-9 mx-auto">
-                        <div class="hd">
+                        <div class="hd mt-5 mb-2">
                             <i class="far fa-paper-plane fa-3x"></i>
                         </div>
-                        <form [formGroup]="ContactF">
+                        <form  [formGroup]="ContactF">
                           <div class="field">
                             <input type="text"  id="name"  formControlName="name" placeholder="Edward Koss">
                             <label for="name"><i class="far fa-user mr-2"></i>{{'Name'}}</label>
@@ -46,7 +46,7 @@
                             <label for="message"><i class="far fa-paragraph mr-2"></i>{{'Message'}}</label>
                           </div>
 
-                          <div class="actions mt-2">
+                          <div class="actions mt-3">
                               <button class="btn">
                                   <i class="fas fa-spinner fa-spin mr-2"></i>
                                   <small><b>{{'Send mail'}}</b></small>

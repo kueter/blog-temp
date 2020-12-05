@@ -1,0 +1,41 @@
+.card-footer span.title {
+  text-transform: initial;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-footer h2.title-2{
+  display: block;
+}
+
+.card-footer h6 {
+  position: relative;
+  display: inline-block;
+}
+
+
+.card-footer h6::after {
+  content: '•';
+  color: #747070;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0 7px;
+}
+
+.img-card {
+  transition: transform .2s;
+}
+
+.cb {
+  overflow: hidden;
+}
+
+.hv:hover {
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, .12);
+}
+
+.hv:hover .img-card  {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
