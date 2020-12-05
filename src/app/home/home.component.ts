@@ -41,6 +41,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // this.toast();
     this.ContactF = new FormGroup({
       name: new FormControl('', [Validators.required,]),
       email: new FormControl('', [Validators.required,]),
@@ -70,13 +71,13 @@ export class HomeComponent implements OnInit {
     this.spin = true;
     setTimeout(() => {
       this.spin = false;
+      this.toast();
     }, 1000);
   }
 
 
   toast() {
-    $(document).ready(() => {
-      $('.ntoast').animate({width:'toggle'},350);
-    });
+    $(".ntoast").fadeIn()
+    .animate({bottom: '5%'}, 1000);
   }
 }
