@@ -35,7 +35,7 @@
   left: 9%;
 }
 
-.ps-0  .btn, .actions .btn {
+.ps-0  .btn {
   background-color: #008080;
 }
 
@@ -151,3 +151,13 @@ input:focus + label {
   cursor: pointer;
 }
 
+
+.actions .btn {
+  background-color: #008080;
+  color: #fff;
+  float: right;
+}
+
+.actions .btn .fa-spinner {
+  color: #fff;
+}
